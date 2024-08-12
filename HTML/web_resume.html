@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src 'self'; connect-src 'self';">
+    <title>My Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #f1f1f1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffa500;
+        }
+
+        /* Header Section */
+        header {
+            background: url('image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #ffa500;
+            text-shadow: 2px 2px #333;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .resume-container {
+            text-align: center;
+            margin: 20px 0;
+            border: 2px solid #ffa500;
+            padding: 10px;
+            background-color: #2e2e2e;
+        }
+
+        .resume-container iframe {
+            width: 100%;
+            height: 700px;
+            border: none;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            padding: 15px 25px;
+            margin: 10px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #f1f1f1;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer p a {
+            color: #ffa500;
+            text-decoration: none;
+        }
+
+        footer p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <h2>My Portfolio</h2>
+        </div>
+        <ul>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Professional Portfolio</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        
+        <!-- Resume Section -->
+        <section id="resume" class="resume-container">
+            <h2>My Resume</h2>
+            <iframe src="resume.pdf" type="application/pdf">
+                Your browser does not support PDFs.
+                <a href="resume.pdf">Download the PDF</a>
+            </iframe>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="button-container">
+            <a href="https://" target="_blank" rel="noopener noreferrer">GitHub Repo 1</a>
+            <a href="https://" target="_blank" rel="noopener noreferrer">GitHub Repo 2</a>
+            <a href="https://" target="_blank" rel="noopener noreferrer">GitHub Repo 3</a>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p><a href="https://" target="_blank" rel="noopener noreferrer">Privacy Policy</a> | <a href="https://" target="_blank" rel="noopener noreferrer">Terms & Conditions</a></p>
+    </footer>
+
+</body>
+</html>
